@@ -34,7 +34,7 @@ LVN_ITEMACTIVATE	= LVN_FIRST - 14
 LVM_GETSELECTIONMARK	= LVM_FIRST + 66
 
 
-;KUZNECHIK = 1
+KUZNECHIK = 1
 
 
 section '{code}' code readable executable
@@ -108,8 +108,6 @@ proc DialogProc hwnddlg,msg,wparam,lparam
 
   .change_cipher:
 	invoke	SendMessage,  [CtrlID], CB_GETCURSEL, 0, 0
-	cmp	eax, 1
-	je     .cno
 	cmp	eax, 2
 	je     .cno
 	mov	dword[cipher], eax
@@ -223,7 +221,7 @@ cipher	dd 0
 CtrlID	dd ?	       ; Хэндл списка
 ciph_items:
 	db 'GOST 28147-89 Magma',0
-	db '<not used>',0  ;db 'GOST 28147-14 Kuznechik',0
+	db 'GOST 28147-14 Kuznechik',0
 	db '<not used>',0
 	db 'IDEA',0
 	db 'AES',0
