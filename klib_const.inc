@@ -1,0 +1,13 @@
+CIPH_GOST	 = 0   ; +
+CIPH_KUZNECHIK	 = 1   ; +
+CIPH__		 = 2   ;
+CIPH_IDEA	 = 3   ; +
+CIPH_AES	 = 4   ; +
+CIPH_RC4	 = 5   ; +
+CIPH_VMPC	 = 6   ; +
+CIPH_RC6	 = 7   ; +
+CIPH_SERPENT	 = 8   ; +
+CIPH_BLOWFISH	 = 9   ; +
+CIPH_TWOFISH	 = 10
+CIPH_MARS	 = 11
+CIPH_SEAL	 = 12
